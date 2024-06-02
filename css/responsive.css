@@ -1,0 +1,23 @@
+@media  screen and (max-width: 768px) {
+    .hero_area {
+        background-size: 200px;
+        background-position: bottom 0px right 0px;
+        }
+    
+        .about_img {
+            display: flex;
+            justify-content: center;
+        }
+        .service_item {
+            height: 300px;
+        }
+        .contact_info {
+            margin-top: 30px;
+            }
+        #navBar .navbar-nav .nav-item .nav-link {
+            padding: 8px;
+        }
+        #navBar .navbar-nav .nav-item .nav-link:hover{
+            background-color: #f99746;
+        }
+}
