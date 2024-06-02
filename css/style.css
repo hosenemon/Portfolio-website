@@ -332,7 +332,7 @@ form
     padding: 75px 50px;
     background-color: #b3d2f1;
 }
-.contact_info #icon {
+.contact_info .icon {
     font-size: 25px;
     width: 45px;
     height: 45px;
