@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emon Hosen Personal Portfolio Website</title>
+    <title>Emon Hosen | Contact</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/round-profile-img3.png" type="image/x-icon">
     <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <!-- fontawesome cdn-->
@@ -65,21 +67,21 @@
                     <form action="#" class="contact_form">
                         <div class="name">
                             <div>
-                                <label for="fname">Frist Name:</label> <br>
+                                <label>Frist Name:</label> <br>
                                 <input type="text" placeholder="Frist name" id="fname"> <br>
                             </div>
                             <div>
-                                <label for="lname">Last Name:</label> <br>
+                                <label>Last Name:</label> <br>
                                 <input type="text" placeholder="Last name" id="lname"> <br>
                             </div>
                         </div>
-                        <label for="email">Email:</label> <br>
+                        <label>Email:</label> <br>
                         <input type="email" placeholder="Email" id="email"> <br>
-                        <label for="subject">Subject</label><br>
+                        <label>Subject</label><br>
                         <input type="text" placeholder="Write a subject" id="subject"> <br>
-                        <label for="messages">Messages</label> <br>
+                        <label>Messages</label> <br>
                         <textarea name="messages" id="messages" placeholder="Write a messages..."></textarea> <br>
-                        <input type="submit" value="SEND" id="send_btn">
+                        <button type="submit" id="send_btn">Send</button>
                     </form>
                     </div>
                 </div>
@@ -144,5 +146,11 @@
     <script src="js/customize.js"></script>
     <!-- script js -->
     <script src="js/script.js"></script>
+    <!-- SMTP JS -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- sweetalert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- contact form -->
+    <script src="js/contact-form.js"></script>
 </body>
 </html>
