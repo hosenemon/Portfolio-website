@@ -181,6 +181,59 @@ service
 .service_tab button:hover, .service_tab button.active {
     color: #0189FF;
 }
+
+/* prise  */
+.prise_section {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.prise_btn {
+    display: flex;
+    justify-content: space-between;
+}
+.prise_btn {
+    background: #252F39;
+}
+.prise_btn button {
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    color: #fff;
+    padding: 10px 30px;
+    border-bottom: 2px solid transparent;
+    text-align: center;
+}
+.prise_btn button.active {
+    border-bottom: 2px solid #F98631;
+}
+.prise_body {
+    padding: 15px;
+}
+.prise_body ul{
+    display: flex;
+    justify-content: space-between;
+}
+.package_name {
+    font-weight: 700;
+    font-size: 24px;
+}
+.prise {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.prise_body a {
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #0189FF;
+    color: #fff;
+    padding: 10px;
+}
+.prise_body a:hover {
+    background-color: #0874d3;
+}
 /* ====================
 Portfolio
 =========================*/
@@ -205,8 +258,18 @@ Portfolio
     margin-top: 25px;
 }
 .mixitup-control-active {
-    background-color: #f99746;
-    color: #fff;
+    background-color: #232D39;
+    color: #0189FF;
+}
+.fancybox__container {
+    margin-top: 60px;
+}
+.serviceTab {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    background: #fff;
+    width: 100%;
 }
 /* ====================
 Testimonials

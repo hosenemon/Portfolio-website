@@ -46,7 +46,9 @@ var containerEl = document.querySelector('.gallery');
         },
     });
 
-
+    Fancybox.bind('[data-fancybox="gallery"]', {
+        // Your custom options for a specific gallery
+      });
 });//document end
 
 

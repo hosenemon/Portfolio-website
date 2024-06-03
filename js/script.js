@@ -16,10 +16,15 @@ $(document).ready(function (){
         };
 
         /* menu fixed */
-        if(windowScroll>100){
+        if(windowScroll>10){
             $(".header").addClass("fixed");
         }else{
             $(".header").removeClass("fixed");
+        }
+        if(windowScroll>50){
+            $(".service_tab").addClass("serviceTab");
+        }else{
+            $(".service_tab").removeClass("serviceTab");
         }
     }) //scroll end
 
