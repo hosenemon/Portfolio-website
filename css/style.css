@@ -158,11 +158,9 @@ service
     color: #0189FF;
 }
 .service_item {
-    height: 285px;
     overflow: hidden;
     border: 1px solid #ddd;
     border-radius: 8px;
-    overflow: hidden;
     margin: 15px 0;
 }
 .services {
@@ -181,8 +179,19 @@ service
 .service_tab button:hover, .service_tab button.active {
     color: #0189FF;
 }
-
-/* prise  */
+.title_box {
+    height: 68px;
+    width: 100%;
+    overflow: hidden;
+}
+.serRating_prise {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+/* ====================
+Prise
+=========================*/
 .prise_section {
     border: 1px solid #ddd;
     border-radius: 5px;
