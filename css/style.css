@@ -1,8 +1,10 @@
-body, a {
-    font-family: "Roboto", sans-serif;
+body {
+    font-family: "Ubuntu", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: #252F39;
+    color: #fff;
+    background-color: #060e24;
+
 }
 section {
     padding: 80px 0;
@@ -10,6 +12,7 @@ section {
 .section_title {
     color: #f99746;
     font-weight: 700;
+    letter-spacing: 3px;
 }
 ul{
     list-style: none;
@@ -24,7 +27,7 @@ html, body {
     scroll-behavior: smooth;
 }
 .section_header {
-    background: #000;
+    background: #060e24;
     color: #fff;
     text-align: center;
     padding: 30px 0;
@@ -33,25 +36,25 @@ html, body {
 Header
 =========================*/
 .header {
-    background-color: #F8F9FD;
+    background-color: #060e24;
     animation: fade 1s;
 }
 .navbar-brand {
     font-size: 25px;
     text-transform: uppercase;
     font-weight: 900;
-    color: #252F39;
+    color: #fff;
     letter-spacing: 2px;
 }
 #navBar .navbar-nav .nav-item .nav-link {
-    color: #252F39;
+    color: #fff;
     padding: 0 16px;
 }
 .header.fixed #navBar .navbar-nav .nav-item.active a, #navBar .navbar-nav .nav-item.active a {
     color: #f99746;
 }
 .header.fixed {
-    background: #11171f;
+    background: #060e24;
     position: fixed;
     top: 0;
     left: 0;
@@ -73,7 +76,6 @@ Hero
     background-image: url(../images/hero.png);
     background-repeat: no-repeat;
     background-position: top 100px right 100px;
-    background-color: #F8F9FD;
     background-size: 450px;
 }
 
@@ -98,6 +100,11 @@ About
 =========================*/
 .about_text h2 {
     text-transform: capitalize;
+}
+.about_text p {
+    line-height: 1.7;
+    text-transform: capitalize;
+    text-align: justify;
 }
 .cv_btn {
     margin: 15px 0;
@@ -133,11 +140,12 @@ About
 /* ====================
 Skill
 =========================*/
-.skills_area {
-    background-color: #F8F9FD;
-}
 .skill_bar_wrap {
-    margin-top: 100px;
+    margin-top: 50px;
+}
+.progress {
+    height: 40px;
+    background-color: #0a1533;
 }
 .skill_bar_wrap ul li{
     margin: 15px 0;
@@ -153,6 +161,7 @@ service
 .service_title {
     display: inline-block;
     padding: 0 5px;
+    color: #f99746;
 }
 .service_title:hover {
     color: #0189FF;
@@ -169,15 +178,17 @@ service
 .service_tab {
     display: flex;
     justify-content: center;
+    background-color: #060e24;
 }
 .service_tab button {
     margin: 0 5px;
     border: 0;
     outline: none;
     background-color: transparent;
+    color: #fff;
 }
-.service_tab button:hover, .service_tab button.active {
-    color: #0189FF;
+.service_tab button:hover {
+    color: #0977d8;
 }
 .title_box {
     height: 68px;
@@ -246,9 +257,6 @@ Prise
 /* ====================
 Portfolio
 =========================*/
-.portfolio_area {
-    background-color: #F8F9FD;
-}
 .section_title {
     text-align: center;
 }
@@ -267,19 +275,13 @@ Portfolio
     margin-top: 25px;
 }
 .mixitup-control-active {
-    background-color: #232D39;
-    color: #0189FF;
+    color: #0189FF !important;
+    background-color: #fff;
 }
 .fancybox__container {
     margin-top: 60px;
 }
-.serviceTab {
-    position: fixed;
-    top: 64px;
-    left: 0;
-    background: #fff;
-    width: 100%;
-}
+
 /* ====================
 Testimonials
 =========================*/
@@ -297,9 +299,6 @@ Testimonials
 /* ====================
 Blog
 =========================*/
-.blog_area {
-    background-color: #F8F9FD;
-}
 .blog_sec_title {
     margin-bottom: 50px;
 }
@@ -345,14 +344,14 @@ Blog
 /* ====================
 form
 =========================*/
-.contact_area {
-    background-color: #F8F9FD;
-}
+
 .contact_form input {
     outline: none;
     border: 1px solid #ddd;
+    background-color: transparent;
     padding: 4px 8px;
     border-radius: 4px;
+    color: #fff;
 }
 .name {
     display: flex;
@@ -376,6 +375,8 @@ form
     width: 410px;
     height: 150px;
     border: 1px solid #ddd;
+    color: #fff;
+    background-color: transparent;
     padding: 8px;
     border-radius: 4px;
     outline: none;
@@ -403,7 +404,6 @@ form
 }
 .contact_info {
     padding: 75px 50px;
-    background-color: #b3d2f1;
 }
 .contact_info .icon {
     font-size: 25px;
@@ -417,7 +417,7 @@ form
     margin-right: 10px;
 }
 .contact_info ul li {
-    margin: 10px 0;
+    margin: 20px 0;
 }
 .social {
     margin-top: 50px;
@@ -425,9 +425,7 @@ form
 /* ====================
 footer
 =========================*/
-.footer_area {
-    background-color: #232D39;
-}
+
 .footer_text {
     text-align: center;
     color: #fff;
@@ -438,7 +436,6 @@ footer
     text-align: center;
     color: #fff;
     padding: 20px 0;
-    background-color: #11171f;
 }
 .footer p {
     margin-bottom: 0;
@@ -458,4 +455,8 @@ footer
     bottom: 40px;
     right: 40px;
     display: none;
+    transition: 0.5s ease;
+}
+.goTop:hover {
+    background-color: #0189FF;
 }
